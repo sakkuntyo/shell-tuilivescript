@@ -1,0 +1,11 @@
+FROM "ubuntu:24.04"
+
+RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+RUN apt update;apt install wget byobu ffmpeg glances -y;
+RUN rm -rf /var/lib/apt/lists/*
+RUN wget https://raw.githubusercontent.com/sakkuntyo/shell-tuilivescript/refs/heads/main/live.sh -O /live.sh
+RUN chmod +x ./live.sh
+
+# サーバー実行
+ENTRYPOINT ["/live.sh"]
+CMD ""
