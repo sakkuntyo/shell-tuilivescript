@@ -1,5 +1,7 @@
 このスクリプトはターミナル上に表示される情報を youtube に配信します。
 
+自身のサーバーの負荷状況や温度管理に利用するために作られました。
+
 <img width="1269" height="863" alt="image" src="https://github.com/user-attachments/assets/da9debc9-6634-4565-9543-87743a3f4183" />
 
 # 使い方
